@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/aut.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" class="form">
+        <div class="inner-post">
+
+{{#with error}}
+<div class="error">{{message}}</div>
+{{/with}}
+
+<div  class="block">
+<label for="username_fld">Имя пользователя:</label>
+<input class="pole" id="username_fld" type="text" name="username" required>
+</div>
+
+<div  class="block">
+<label for="password_fld">Пароль:</label>
+<input class="pole" id="password_fld" type="password" name="password">
+</div>
+
+<div  class="block">
+<label for="password_repeat_fld">Повторить пароль:</label>
+<input class="pole" id="password_repeat_fld" type="password"name="password_repeat">
+</div>
+<button class="but">Зарегистрировать</button>
+        </div>
+</form>
+
+</body>
+</html>
